@@ -3,6 +3,16 @@ var data = require('../data.json');
 
 exports.view = function(request, response){
 	console.log(data);
+	response.render('index', data);
+};
+
+/*exports.view = function(request, response){
+	console.log(data);
+	response.render('data');
+};*/
+
+/*exports.view = function(request, response){
+	console.log(data);
 	response.render('index', {
 			'friendslist': [
 				{
@@ -38,4 +48,4 @@ exports.view = function(request, response){
 			]
 	});
 
-};
+};*/
